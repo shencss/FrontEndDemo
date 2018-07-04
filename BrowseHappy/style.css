@@ -35,6 +35,7 @@ html,body {
 	display: flex;
 	flex-flow: row wrap;
 	padding: 32px 5%;
+	justify-content: center;
 }
 #main .item {
 	flex: 0 0 192px;
