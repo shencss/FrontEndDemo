@@ -7,7 +7,7 @@
 #container{
 	width: 320px;
 	height: 480px;
-	margin: 48px auto;
+	margin: 100px auto;
 	position: relative;
 }
 
@@ -25,7 +25,7 @@
 	text-align: center;	
 }
 button{
-	background-color: #008CBA;
+	background-color: #2196F3;
 	color: #FFF;
 	height: 30px;
 	line-height: 30px;
@@ -36,7 +36,7 @@ button{
 }
 
 button:hover{
-	background-color: #00BBDD;
+	background-color: #32A7F4;
 }
 
 #myCanvas{
