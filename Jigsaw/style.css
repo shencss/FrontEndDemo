@@ -1,0 +1,89 @@
+/*** 基本样式 ***/
+*,*::after,*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*** 容器样式 ***/
+.container {
+	width: 480px;
+	margin: 24px auto;
+	text-align: center;
+}
+
+/*** 游戏面板样式 ***/
+.game {
+	position: relative;
+	width: 480px;
+	height: 480px;
+	background-color: #FFF;
+	margin-bottom: 24px;
+}
+.game .item {
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	background-color: #22C7A9;
+	border: 2px solid #FFF;
+	color: #FFF;
+	line-height: 160px;	
+	font-size: 28px;
+	font-weight: bold;
+	transition: all .3s;
+}
+#block1{
+	top: 0;
+	left: 0;
+}
+#block2 {
+	top: 0;
+	left: 160px;
+}
+#block3{
+	top: 0;
+	left: 320px;
+}
+#block4 {
+	top: 160px;
+	left: 0;
+}
+#block5 {
+	top: 160px;
+	left: 160px;
+}
+#block6 {
+	top: 160px;
+	left: 320px;
+}
+#block7 {
+	top: 320px;
+	left: 0;
+}
+#block8 {
+	top: 320px;
+	left: 160px;
+}
+#block9 {
+	top: 320px;
+	left: 320px;
+	background-color: #FCCF4D;
+}
+
+/*** 控制面板样式 ***/
+button {
+	outline: none;
+	border: none;
+	background-color: #FCA180;
+	padding: 8px 24px;
+	color: #FFF;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 8px 6px;
+}
+button:hover {
+	background-color: #F56262;
+}
+::selection {
+	background-color: transparent;
+}
