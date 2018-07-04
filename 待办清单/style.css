@@ -59,7 +59,8 @@ p,a,span,input,.app-title,.okAddBtn{
 	margin: 6px auto;
 	width: 60%;
 	height: 2px;
-	border-color: #fff;
+	border-radius: 10px;
+	background-color: #fff;
 	transform-origin: 0;
 }
 .app-back{
@@ -89,14 +90,15 @@ p,a,span,input,.app-title,.okAddBtn{
 	position: absolute;
 	display: none;
 	width: 100%;
-	padding: 0 0 100px 0;
+	padding: 0;
 	margin: 0 auto;
+	padding-bottom: 100px;
 }
 .completed-list{
 	position: absolute;
 	display: none;
 	width: 100%;
-	padding: 0 0 100px 0;
+	padding-bottom: 100px;
 	margin: 0 auto;
 }
 .completed-list span{
@@ -131,6 +133,7 @@ p,a,span,input,.app-title,.okAddBtn{
 	height: 28px;
 	cursor: pointer;
 	fill: #c5c9ce;
+	padding: 6px;
 }
 .task-title{
 	font-size: 16px;
@@ -235,7 +238,7 @@ p,a,span,input,.app-title,.okAddBtn{
 .menu-content{
 	position: fixed;
 	top: 0;
-	left: -265px;
+	left: -260px;
 	z-index: 3;
 	width: 250px;
 	height: 100%;
@@ -271,7 +274,7 @@ p,a,span,input,.app-title,.okAddBtn{
 	width: 20px;
 	height: 20px;
 }
-.menu-subCard{
+.menu-card{
 	display: none;
 	position: fixed;
 	z-index: 2;
@@ -298,7 +301,7 @@ p,a,span,input,.app-title,.okAddBtn{
 	}
 }
 
-.setColorPanel{
+.colorCard{
 	padding: 20px 0;
 }
 .colorItem{
@@ -333,7 +336,7 @@ p,a,span,input,.app-title,.okAddBtn{
 }
 .shake{
 	animation: shake .3s;
-	-webkit-animation: shanke .3s;
+	-webkit-animation: shake .3s;
 }
 @keyframes shake{
 	30%{
