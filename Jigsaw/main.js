@@ -4,7 +4,7 @@ var startBtn = document.getElementById('start'),
 	timeDisplay = document.getElementById('time'),
 	gameElement = document.getElementById('gameContainer');
 
-var tiems = 0,clockTimeId;
+var times = 0,clockTimeId;
 
 //start按钮的点击事件
 startBtn.addEventListener('click',startHandler,false);
@@ -15,7 +15,7 @@ function startHandler() {
 		times++;
 		timeDisplay.innerHTML =getColckText(Math.floor(times / 60),times % 60);
 		clockTimeId = setTimeout(start,1000);
-	},1000)
+	},1000);
 }
 
 //rese按钮的点击事件
@@ -33,6 +33,7 @@ function getColckText(minutes,seconds) {
 	return minutes + ':' + seconds;
 }
 
+//记录“邻居”
 var direct = [
 	[0],
 	[2, 4],
@@ -71,8 +72,11 @@ gameElement.addEventListener('click',function(event) {
 function canMove(id) {
 	var blankIndex = nowPos.indexOf(9);
 	var targetIndex = nowPos.indexOf(id);
-
-	if(!!~direct[targetIndex].indexOf(blankIndex)) {
+	console.log(direct[targetIndex]);
+	console.log(~direct[targetIndex]);
+	console.log(!~direct[targetIndex]);
+	console.log(!!~direct[targetIndex]);
+	if(direct[targetIndex].indexOf(blankIndex) != -1) {
 		move(blankIndex,targetIndex,9,id);
 		if(check()) {
 			timeDisplay.innerHTML = '你在用时' + getColckText(tiems / 60,times % 60) + '后通关';
@@ -105,6 +109,7 @@ function check() {
 	return flag;
 }
 
+//随机排布
 function startRandom() {
 	nowPos = [];
 
@@ -114,6 +119,7 @@ function startRandom() {
 	nowPos.sort(function() {
 		return Math.random() - .5;
 	});
+	console.log(nowPos);
 
 	nowPos.unshift(0);
 
@@ -122,3 +128,5 @@ function startRandom() {
 			document.getElementById('block' + nowPos[i]).style.top = posXY[i][1] + 'px';
 		} 
 }
+
+startRandom();
