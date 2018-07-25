@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #333;
+    color: #333;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+div {
+    position: relative;
+    z-index: 2;
+}
+
+.quote {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 450px;
+    display: table;
+}
+
+.quote-box {
+    padding: 40px 50px;
+    width: 450px;
+    border-radius: 3px;
+    background-color: #FFF;
+    display: table;
+}
+
+.quote-box .quote-text {
+    text-align: center;
+    width: 450px;
+    height: auto;
+    clear: both;
+    font-weight: 500;
+    font-size: 1.75em;
+}
+
+.quote-box .quote-text i {
+    font-size: 1.0em;
+    margin-right: .4em;
+}
+
+.quote-box .quote-from {
+    width: 450px;
+    height: auto;
+    clear: both;
+    padding-top: 20px;
+    font-size: 1em;
+    text-align: right;
+}
+
+.quote-box .buttons {
+    width: 450px;
+    margin: auto;
+    display: block;
+}
+
+.quote-box .buttons .button {
+    padding: 8px 18px 6px 18px;
+    margin-top: 30px;
+    height: 38px;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    outline: none;
+    background-color: #333;
+    font-size: .85em;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.quote-box .buttons .button:hover {
+    opacity: .9;
+}
+
+.quote-box .buttons #tweet-quote, .quote-box .buttons #tumblr-quote {
+    float: left;
+    margin-right: 5px;
+    padding: 8px 0 0 0;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.quote-box .buttons #new-quote {
+    float: right;
+    font-weight: 600;
+}
+
+.footer {
+    margin:15px auto;
+    display: block;
+    width: 450px;
+    text-align: center;
+    font-size: .8em;
+    color: #FFF;
+}
+
+.footer a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #FFF;
+}
