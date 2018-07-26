@@ -4,10 +4,14 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #FFF;
+}
+
 #container{
 	width: 320px;
 	height: 480px;
-	margin: 100px auto;
+	margin: 50px auto;
 	position: relative;
 }
 
