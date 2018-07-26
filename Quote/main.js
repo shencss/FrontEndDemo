@@ -2,8 +2,10 @@ var colors = ['#16A085', '#27AE60', '#2C3E50', '#F39C12', '#E74C3C', '#9B59B6', 
 var currentQuote = '', currentFrom = '', color = 0;
 
 function getQuote() {
+    //使用ajax获取数据
     $.ajax({
         type: 'GET',
+        //‘一言’免费API
         url: 'https://v1.hitokoto.cn/?c=d',
         cache: false,
         async: true,
