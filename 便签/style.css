@@ -1,24 +1,24 @@
-*,*::before,*::after{
+*, *::before, *::after{
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
 
-body{
+body {
 	background-image: linear-gradient(135deg,#f5f7fa,#c3cfe2);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
 }
 
-form{
+form {
 	width: 80%;
 	text-align: center;
 	margin: 40px auto;
 }
 
-form select{
+form select {
 	height: 40px;
 	padding: 10px 10px;
 	color: #2196F3;
@@ -27,7 +27,7 @@ form select{
 	box-shadow: 1px 1px 2px rgba(0,0,0,.2);
 }
 
-form input[type='text']{
+form input[type='text'] {
 	width: 320px;
 	height: 40px;
 	padding: 10px 10px;
@@ -37,7 +37,7 @@ form input[type='text']{
 
 }
 
-form input[type='button']{
+form input[type='button'] {
 	height: 40px;
 	padding: 10px 16px;
 	cursor: pointer;
@@ -47,11 +47,11 @@ form input[type='button']{
 	box-shadow: 1px 1px 2px rgba(0,0,0,.2);
 }
 
-form input[type='button']:hover{
+form input[type='button']:hover {
 	background-color: #21AAF4;
 }
 
-#note-list{
+#note-list {
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -66,7 +66,7 @@ form input[type='button']:hover{
 
 }
 
-#note-list li{
+#note-list li {
 	font-family: sans-serif;
 	display: block;
 	height: 200px;
@@ -77,9 +77,33 @@ form input[type='button']:hover{
 	border: none;
 	border-radius: 6px 12px;
 	background-color: #FFF;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+	transition: tranform 2s linear;
 	-mo-box-flex: 0;
 	-ms-flex: 0 0 200px;
 	flex: 0 0 200px;
-
 }
 
+#note-list li:nth-child(even) {
+    transform: rotate(4deg);
+}
+
+#note-list li:nth-child(odd) {
+    transform: rotate(-4deg);
+}
+
+#note-list li:nth-child(3n) {
+    transform: rotate(-6deg);
+}
+
+#note-list li:hover {
+	transform: rotate(0deg) scale(1.2);
+}
+
+#note-list li.normal {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+#note-list li.important {
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
