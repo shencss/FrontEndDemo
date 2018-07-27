@@ -10,20 +10,16 @@ body {
 
 #container {
 	perspective: 800px;
-	perspective-origin: center 364px;
+	perspective-origin: center 440px;
 	overflow: hidden;
-
 }
 
 #page-group {
 	width: 360px;
 	height: 360px;
-	margin: 24px auto;
+	margin: 100px auto 20px auto;
 	padding: 20px;
 	transform-style: preserve-3d;
-
-	
-
 }
 .page {
 	width: 320px;
