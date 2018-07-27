@@ -3,10 +3,17 @@
 	src: url('font/fontwasome-wefont.ttf'),url('font/fontawesome-webfont.eot'),url('font/fontawesome-webfont.woff');
 }
 
+body {
+	background-color: #FFF;
+}
+
 section {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	width: 90%;
 	height: 240px;
-	margin: 30px auto;
 	background-color: #6699CC;
 	text-align: center;
 	padding: 64px;
@@ -28,9 +35,9 @@ section {
 	margin-right: 8px;
 	color: #69C;
 	font-family: 'my-font';
-	-webkit-animation: move 1s 1s cubic-bezier(.81,-0.62,.23,1.92);
-	-0-animation: move 1s 1s cubic-bezier(.81,-0.62,.23,1.92);
-	animation: move 1s 1s cubic-bezier(.81,-0.62,.23,1.92);
+	-webkit-animation: move 1s 1s cubic-bezier(.81,-0.62,.23,1.92) ;
+	-o-animation: move 1s 1s cubic-bezier(.81,-0.62,.23,1.92) ;
+	animation: move 1s 1s cubic-bezier(.81,-0.62,.23,1.92) ;
 	-webkit-animation-fill-mode: both;
 	-o-animation-fill-mode: both;
 	animation-fill-mode: both;
