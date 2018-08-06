@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700i');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #FFEE58;
+    text-align: center;
+}
+h2 {
+    margin-top: 50px;
+    font-size: 45px;
+    font-family: 'Bungee Shade', sans-serif;
+}
+.camera {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -175px;
+    width: 350px;
+    text-align: center;
+    perspective: 100px;
+}
+.top {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -100px;
+    background-color: rgb(40, 40, 40);
+    width: 200px;
+    height: 20px;
+    border-radius: 10px 10px 0 0;
+}
+.upper {
+    position: absolute;
+    width: 350px;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    background-color: #FFF;
+    z-index: 3;
+}
+.upper .upper-rainbow {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 48px;
+    margin-left: -24px;
+    height: 100px;
+    background-image: repeating-linear-gradient(to right,
+    #EF0079 0px, #EF0079 8px, #D70006 8px, 
+    #D70006 16px, #FF9C00 16px, #FF9C00 24px,
+    #FEEB00 24px, #FEEB00 32px,#5DB333 32px, 
+    #5DB333 40px, #00B2FF 40px, #00B2FF 48px);
+}
+.upper .label {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 90px;
+    height: 40px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+.upper .label h3 {
+    position: absolute;
+    left: 10px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+.upper .flash {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 70px;
+    height: 50px;
+    background-image: repeating-linear-gradient(to right, gray 0px, gray 10px, rgb(50, 50, 50) 10px, rgb(50, 50, 50) 20px);
+    border: #000 solid;
+}
+.upper .lens {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -52px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 4px solid rgb(50, 50, 50);
+    box-shadow: 5px 5px 30px rgba(50, 50, 50, .8);
+}
+.upper .lens::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+.upper .lens:after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFF;
+    opacity: .5;
+}
+.upper #take-photo {
+    position: absolute;
+    left: 40px;
+    top: 90px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FF0200;
+    border: 3px solid rgb(230, 230, 230);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    outline: none;
+}
+.upper #take-photo:active {
+    background-color: #C62828;
+}
+.upper .node {
+    position: absolute;
+    right: 40px;
+    top: 96px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: 4px solid rgb(50, 50, 50);
+}
+.downer {
+    position: absolute;
+    top: 152px;
+    left: 50%;
+    width: 356px;
+    height: 60px;
+    background-color: rgb(230,230,230);
+    transform-style: preserve-3d;
+    transform: rotateX(3deg) translateX(-50%);
+    perspective: 100px;
+    z-index: 3;
+}
+.downer .downer-rainbow {
+    position: absolute;
+    left: 50%;
+    width: 48px;
+    height: 60px;
+    margin-left: -24px;
+    background-image: repeating-linear-gradient(to right,
+   #EF0079 0px, #EF0079 8px,
+   #D70006 8px, #D70006 16px,
+   #FF9C00 16px, #FF9C00 24px,
+   #FEEB00 24px, #FEEB00 32px,
+   #5DB333 32px, #5DB333 40px,
+   #00B2FF 40px, #00B2FF 48px);
+   opacity: .7;
+}
+.printer-upper {
+    position: absolute;
+    top: 215px;
+    left: 50%;
+    margin-left: -181px;
+    width: 362px;
+    height: 35px;
+    background-color: rgb(30, 30, 30);
+    z-index: 3;
+}
+.printer-upper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -140px;
+    width: 280px;
+    height: 15px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px 10px 0 0;
+}
+.printer-downer {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    margin-left: -181px;
+    width: 362px;
+    height: 35px;
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(30, 30, 30);
+    z-index: 1;
+}
+.printer-downer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -140px;
+    width: 280px;
+    height: 15px;
+    background-color: rgb(50, 50, 50);
+    border-radius:  0 0 10px 10px;
+}
+.printer-downer #photo {
+    position: absolute;
+    top: -240px;
+    left: 50%;
+    width: 230px;
+    height: 172px;
+    margin-left: -115px;
+    border: 5px solid #FFF;
+    border-bottom: 30px solid #FFF;
+    box-shadow: 0 0 40px #000;
+    background: url(./ironman.jpg) no-repeat;
+    background-size: 100%;
+    z-index: 2;
+
+}
+.printer-downer #photo #cover {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 230px;
+    height: 172px;
+    margin-left: -115px;
+    background-color: #000;
+}
+@keyframes print {
+    0% {
+        top:-240px;
+    }
+   10% {
+       top:-200px; 
+    }
+    20% {
+       top:-150px; 
+    }
+    30% {
+       top:-100px; 
+    }
+    40% {
+       top:-50px; 
+    }
+    50% {
+    }
+    60% {
+    }
+    100% {
+        top:60px;
+    }
+}
+@keyframes show {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
