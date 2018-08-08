@@ -311,7 +311,7 @@ $(document).ready(function(){
 
 	//关于面板
 	function aboutCard(){
-		var html = '<div class=aboutApp><p><b>药丸清单，一个专治拖延症患者的应用。</b><br>2018年6月份练手项目<br><br>@2018 <a href="#" target="_blank">shencs</a></div>';
+		var html = '<div class=aboutApp><p><b>药丸清单，一个专治拖延症患者的应用。</b><br>2018年6月份练手项目<br><br>@2018 <a href="#" target="_blank">shencss</a></div>';
 		$('.menu-card').html(html);
 	};
 
