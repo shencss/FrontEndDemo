@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Send</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="send-controls"> 
+        <lable for="chance"><input type="radio" name="nav" checked="checked" id="chance-radio">FEELING LUCKY</lable>
+        <lable for="error"><input type="radio" name="nav" id="error-radio">ERROE</lable>  
+        <lable for="sent"><input type="radio" name="nav" id="sent-radio">SENT</lable> 
+    </nav>
+
+    <div class="send-app" data-state="send" data-prev-state="">
+        <!-- Send -->
+        <div class="ui-layer" data-show="send" data-active="true">
+            <button class="ui-button send">
+                <div class="ui-background"></div>
+                <span>Send</span>
+            </button>
+        </div>
+        <div class="ui-layer" data-show="sendding" data-active="false">
+            <div class="ui-progress"></div>
+        </div>
+
+
+        <!-- Sent -->
+        <div class="ui-layer" data-show="sent" data-active="false">
+            <button class="ui-button sent">
+                <div class="ui-background"></div>
+                <span>Sent</span>
+            </button>
+        </div>
+
+        <!-- Error -->
+        <div class="ui-layer error" data-show="error" data-active="false">
+            <div class="ui-message">
+                <div class="ui-title">ERROR</div>
+                <div class="ui-subtext">WIFI no connected dumb dumb</div>
+            </div>
+            <div class="ui-gooey">
+                <div class="ui-button-mover retry">
+                    <button class="ui-button icon" data-click="RETRY">
+                        <span>⟲</span>
+                    </button>
+                </div>
+                <div class="ui-button-mover cancel">
+                    <button class="ui-button icon" data-click="CANCEL">
+                        <span>✕</span>
+                    </button>
+                </div>
+                <div class="ui-background gooey"></div>
+            </div>   
+        </div>
+    </div>
+
+    <!-- Filter 形成水滴效果 -->
+    <svg class="goo-filter" viewBox="0 0 1 1">
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -20" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+    </svg>
+
+    <script src="main.js"></script>
+</body>
+</html>
