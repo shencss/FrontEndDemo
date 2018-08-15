@@ -16,6 +16,11 @@
 
 ![](https://github.com/shencss/FrontEndDemo/raw/master/screenshot/3DPage.png)
 
+## BezierCurve：
+贝塞尔曲线导航动画 [BezierCurve](http://htmlpreview.github.io/?https://github.com/shencss/FrontEndDemo/blob/master/BezierCurve/index.html) 
+
+![](https://github.com/shencss/FrontEndDemo/raw/master/screenshot/BezierCurve.png)
+
 ## BrowseHappy：
 主流浏览器版本更新应用 [BrowseHappy](http://htmlpreview.github.io/?https://github.com/shencss/FrontEndDemo/blob/master/BrowseHappy/index.html) 
 
